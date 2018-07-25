@@ -8,6 +8,8 @@ class Song
   extend Findable::ClassMethod
   include Findable::InstanceMethod
 
+  include Paramable
+
   attr_accessor :name
   attr_reader :artist
 
@@ -29,10 +31,6 @@ class Song
   #   self.all.clear
   # end
 
-  # def to_param
-  #   name.downcase.gsub(' ', '-')
-  # end
-  #
   # def self.count
   #   self.all.count
   # end
